@@ -120,7 +120,7 @@ public class MagicSquare {
             return;
         }
 
-        this.square[x][y] = value;
+        this.square[y][x] = value;
     }
 
     public int getWidth() {

@@ -4,8 +4,11 @@ public class Program {
     public static void main(String[] args) {
 
         MagicSquareFactory msFactory = new MagicSquareFactory();
-        // System.out.println(msFactory.createMagicSquare(5));
+        System.out.println(msFactory.createMagicSquare(5));
 
+        
+        
+        /*
         MagicSquare square = new MagicSquare(3);
         square.placeValue(0, 0, 8);
         square.placeValue(0, 1, 1);
@@ -41,5 +44,6 @@ public class Program {
         System.out.println("sum of rows: " + badSquare.sumsOfRows());
         System.out.println("sum of columns: " + badSquare.sumsOfColumns());
         System.out.println("sum of diagonals: " + badSquare.sumsOfDiagonals());
+*/
     }
 }
