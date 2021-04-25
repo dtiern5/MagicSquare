@@ -41,10 +41,25 @@ public class MagicSquare {
     }
 
     public ArrayList<Integer> sumsOfDiagonals() {
-        return new ArrayList<>();
+        ArrayList<Integer> sumOfDiagonals = new ArrayList<>();
+        int first = 0;
+        int second = 0;
+        for (int row = 0; row < square.length; row++) {
+            for (int col = 0; col < square[row].length; col++) {
+                if (row == col) {
+                    first += square[row][col];
+                }
+                if (row + col == square.length - 1) {
+                    second += square[row][col];
+                }
+            }
+        }
+        sumOfDiagonals.add(first);
+        sumOfDiagonals.add(second);
+        return sumOfDiagonals;
     }
-
-    // ready-made helper methods -- don't touch these
+            // ready-made helper methods -- don't touch these
+            
     public boolean isMagicSquare() {
         return sumsAreSame() && allNumbersDifferent();
     }

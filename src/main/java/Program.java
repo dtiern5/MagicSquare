@@ -2,7 +2,6 @@
 public class Program {
 
     public static void main(String[] args) {
-        // Test the MagicSquare class here
 
         MagicSquareFactory msFactory = new MagicSquareFactory();
         // System.out.println(msFactory.createMagicSquare(5));
@@ -32,6 +31,7 @@ public class Program {
         System.out.println(square.toString());
         System.out.println("sum of rows: " + square.sumsOfRows());
         System.out.println("sum of columns: " + square.sumsOfColumns());
+        System.out.println("sum of diagonals: " + square.sumsOfDiagonals());
         
         System.out.println("");
         System.out.println("--------");
@@ -40,5 +40,6 @@ public class Program {
         System.out.println(badSquare.toString());
         System.out.println("sum of rows: " + badSquare.sumsOfRows());
         System.out.println("sum of columns: " + badSquare.sumsOfColumns());
+        System.out.println("sum of diagonals: " + badSquare.sumsOfDiagonals());
     }
 }
